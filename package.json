@@ -1,5 +1,5 @@
 {
-  "name": "react-typescript-jest-boilerplate",
+  "name": "typescript-jest-boilerplate",
   "version": "1.4.0",
   "description": "Boilerplate for React app with Typescript and Jest lib",
   "main": "index.js",
