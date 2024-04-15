@@ -24,5 +24,6 @@ module.exports = {
     'prettier/indent': 'off',
     indent: ['error', 2],
     'react/display-name': 'off',
+    '@typescript-eslint/consistent-type-imports': 'error',
   },
 };

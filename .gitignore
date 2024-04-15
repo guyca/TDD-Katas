@@ -2,3 +2,4 @@ node_modules
 test-coverage
 .history
 dist
+yarn-error.log
