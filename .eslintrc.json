@@ -6,29 +6,22 @@
     },
     "ignorePatterns": ["**/*.config.js"],
     "extends": [
-        "airbnb-base",
-        "airbnb-typescript",
-        "plugin:react/recommended",
-        // "plugin:@typescript-eslint/recommended-type-checked",
-        "plugin:import/typescript",
         "plugin:@stylistic/disable-legacy",
         "plugin:jest-formatting/recommended"
       ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "sourceType": "module",
-      "project": "./tsconfig.json"
+      "project": "tsconfig.json"
     },
     "plugins": [
         "@stylistic",
-        "react",
         "@typescript-eslint",
         "import-newlines",
         "unused-imports",
         "jest-formatting"
     ],
     "rules": {
-      "@obsidian/provider-unresolved-dependencies": "error",
       "no-console":"off",
       "@stylistic/max-len": [
         "error",
@@ -38,6 +31,7 @@
           "ignoreRegExpLiterals": true
         }
       ],
+      "no-multiple-empty-lines": ["error", { "max": 1 }],
       "@stylistic/no-extra-semi": "error",
       "@stylistic/lines-between-class-members": ["error", "always", {"exceptAfterSingleLine": true}],
       "import/extensions": "off",
@@ -46,13 +40,11 @@
       "@typescript-eslint/member-delimiter-style": "error",
       "import/no-unresolved": "off",
       "class-methods-use-this": "off",
-      "react/jsx-filename-extension": ["error", {"extensions": [".js", ".ts", ".jsx", ".tsx"]}],
-      "react/jsx-props-no-spreading": "off",
       "no-use-before-define": "off",
-      "@typescript-eslint/no-use-before-define": ["off"],
+      "@typescript-eslint/no-use-before-define": "off",
       "no-restricted-syntax": "off",
       "import/no-named-as-default": "off",
-      "@typescript-eslint/ban-types": ["off"],
+      "@typescript-eslint/ban-types": "off",
       "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
       "max-classes-per-file": ["off"],
       "curly": ["error", "multi-line"],
@@ -82,13 +74,10 @@
             "semi": false
         }
       ],
-      "react/display-name": "off",
       "no-plusplus": "off",
       "@stylistic/no-trailing-spaces": "error",
       "no-shadow": "off",
       "@typescript-eslint/no-shadow": ["error", {"allow": ["Graph"]}],
-      "react/button-has-type": "off",
-      "react/jsx-one-expression-per-line": ["off"],
       "arrow-body-style": ["off"],
       "@stylistic/quotes": ["error", "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
       "@typescript-eslint/lines-between-class-members": "off",
@@ -107,9 +96,6 @@
         "node": {
           "extensions": [".js", ".jsx", ".ts", ".tsx"]
         }
-      },
-      "react": {
-        "version": "detect"
       }
     }
 }
