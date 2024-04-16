@@ -17,7 +17,7 @@
   "homepage": "https://github.com/guyca/TDD-Katas?tab=readme-ov-file#tdd-katas",
   "devDependencies": {
     "@stylistic/eslint-plugin": "1.7.x",
-    "@types/jest": "29.4.x",
+    "@types/jest": "^29.5.12",
     "@types/jest-when": "3.x.x",
     "@typescript-eslint/eslint-plugin": "5.50.0",
     "@typescript-eslint/parser": "5.50.0",
@@ -27,7 +27,7 @@
     "jest-mock-extended": "^3.0.6",
     "jest-when": "^3.6.0",
     "source-map-loader": "4.0.1",
-    "ts-jest": "29.0.5",
+    "ts-jest": "^29.1.2",
     "typescript": "5.x.x"
   }
 }
