@@ -13,9 +13,6 @@
     ],
     "allowJs": true,
     "baseUrl": "./",
-    "paths": {
-      "@components/*": ["src/components/*"],
-    },
     "types": ["jest", "node"]
   },
   "exclude": [

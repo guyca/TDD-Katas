@@ -21,17 +21,6 @@ The main goal of this Kata is to implement a simple calculator that takes a stri
 5. The calculator throws an exception for negative numbers and shows all negative numbers in the exception message.
 6. Numbers bigger than 1000 should be ignored.
 7. Delimiters can be of any length.
-8. The calculator allows multiple delimiters.
 
-## How to Start
-1. Clone this repository.
-3. Start with the simplest test case of an empty string and move to one and two numbers.
-4. Remember to solve things as simply as possible so that you force yourself to write tests you did not think about.
-5. Remember to refactor after each passing test.
-
-## Rules
-* Try not to read ahead.
-* Do one task at a time. The trick is to learn to work incrementally.
-* Make sure you only test for correct inputs. There is no need to test for invalid inputs for this kata.
 
 **Happy coding!**
