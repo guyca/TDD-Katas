@@ -1,10 +1,17 @@
 import { Calculator } from '.';
+import { NumberValidator } from './NumberValidator';
+import { Parser } from './Parser';
+import { UnsupportedNumbersFilter } from './UnsupportedNumbersFilter';
 
 describe('StringCalculator', () => {
   let calculator: Calculator;
 
   beforeEach(() => {
-    calculator = new Calculator();
+    calculator = new Calculator(
+      new Parser(),
+      new NumberValidator(),
+      new UnsupportedNumbersFilter(),
+    );
   });
 
   it('returns 0 when string is empty', () => {
