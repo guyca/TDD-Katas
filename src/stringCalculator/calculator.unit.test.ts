@@ -1,16 +1,14 @@
 import { Calculator } from './Calculator';
-import { NumberValidator } from './NumberValidator';
-import { Parser } from './Parser';
-import { UnsupportedNumbersFilter } from './UnsupportedNumbersFilter';
+import { mockDeep } from 'jest-mock-extended';
 
 describe('StringCalculator', () => {
   let calculator: Calculator;
 
   beforeEach(() => {
     calculator = new Calculator(
-      new Parser(),
-      new NumberValidator(),
-      new UnsupportedNumbersFilter(),
+      mockDeep(),
+      mockDeep(),
+      mockDeep(),
     );
   });
 
