@@ -15,5 +15,4 @@ export class Calculator {
     const filtered = this.unsupportedNumbersFilter.filter(parsed);
     return filtered.reduce((acc, num) => acc + num);
   }
-
 }
